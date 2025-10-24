@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    
     <title>Projeto Lista de compras</title>
 </head>
 <body>
-<div class="container">
- 
+
+   <div id="container">
+        <header>
+            <img src="/assets/Logo.svg" alt="Logo Lista de Compras">
+            <h1>quicklist</h1>
+        </header>
+
+        <main>
+            <form action="">
+                    <button class="btn-voltar" type="submit">
+                     <ion-icon name="arrow-back"></ion-icon>
+                        Voltar
+                    </button>
+        
+                    <h1>Compras da semana</h1>
+
+                    <div id="itens">
+                        <input type="text" name="camp" id="camp" placeholder="Adicione um novo item" required>
+                        <button>Adicionar item</button>
+                    </div>
+        
+                <ul id="lista">
+                    <li>
+                        <input type="checkbox">
+                        <span>Pão de forma</span>
+                        <button class="delete-btn"><ion-icon name="trash"></ion-icon></button>
+                    </li>
+                     <li>
+                        <input type="checkbox">
+                        <span>Café preto</span>
+                        <button class="delete-btn"><ion-icon name="trash"></ion-icon></button>
+                    </li>
+                     <li>
+                        <input type="checkbox">
+                        <span>Suco de laranja</span>
+                        <button class="delete-btn"><ion-icon name="trash"></ion-icon></button>
+                    </li>
+                     <li>
+                        <input type="checkbox">
+                        <span>Bolacha</span>
+                        <button class="delete-btn"><ion-icon name="trash"></ion-icon></button>
+                    </li>
+                    
+                </ul>
+            </form>
+        </main>
+
 </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script src="./script.js"></script>
 </body>
 </html>
