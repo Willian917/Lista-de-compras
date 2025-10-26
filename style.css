@@ -74,14 +74,11 @@
     margin-bottom: 40px;
     }
 
-    #lista {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    }
+   
 
-    input{
+    #itens input{
     height: 44px;
+    width: 326px;
     border-radius: 12px;
     padding: 14px 16px;
     background-color: var(--bg-secondary);
@@ -103,6 +100,7 @@
 
     #itens button{
     height: 44px;
+    width: 326px;
     border-radius: 12px;
     background-color: var(--color-brand);
     border: solid 1px var(--color-brand);
@@ -122,12 +120,19 @@
     margin-bottom: 36px;
     }
 
+    #lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+
     li{
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
     padding-left: 12px;
     height: 57px;
+    width: 327px;
     font: var(--paragraph);
     color: var(--content-secondary);
     background-color: var(--bg-secondary);
@@ -188,6 +193,7 @@
         border: solid 1px red;
         background-color: var(--color-danger);
         height: 44px;
+        width: 327px;
         font: var(--label);
         border-radius: 12px;
         
@@ -212,3 +218,5 @@
         padding-right: 12px;
         font-size: 20px;
     }
+
+
