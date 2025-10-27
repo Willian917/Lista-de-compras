@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <link rel="stylesheet" href="style.css">
     
     <title>Projeto Lista de compras</title>
@@ -18,16 +21,15 @@
 
    <div id="container">
       
-
         <main>
-            
+
             <header>
                 <img src="/assets/icons/Logo.svg" alt="Logo Lista de Compras">
                 <h1>quicklist</h1>
             </header>
 
             <form>
-                    <button class="btn-voltar" type="submit">
+                    <button class="btn-voltar" type="button">
                      <ion-icon name="arrow-back"></ion-icon>
                         Voltar
                     </button>
@@ -36,7 +38,7 @@
 
                     <div id="itens">
                         <input type="text" name="camp" id="camp" placeholder="Adicione um novo item" required>
-                        <button>Adicionar item</button>
+                        <button id="botao" type="submit">Adicionar item</button>
                     </div>
         
                 <ul id="lista">
@@ -70,7 +72,7 @@
                         <ion-icon name="alert"></ion-icon>
                         O item foi removido da lista
                     </span>
-                    <button>
+                    <button id="close">
                         <ion-icon name="close"></ion-icon>
                     </button> 
                 </div>
@@ -78,8 +80,6 @@
         </main>
 
 </div>
-
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
     <script src="./script.js"></script>
 </body>
