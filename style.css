@@ -88,9 +88,6 @@
 
     cursor: text;
     }
-    input:hover{
-    border: solid 2px var(--border-hover);
-    }
 
     input:focus{
     border: solid 2px var(--color-brand);
