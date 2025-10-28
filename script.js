@@ -55,22 +55,10 @@ botao.addEventListener("click", () => {
   input.focus()
 })
 
-
 input.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     e.preventDefault()
     botao.click()
-  }
-})
-
-lista.addEventListener("click", (e) => {
-  if (e.target.closest(".delete-btn")) {
-    e.target.closest("li").remove()
-    footer.classList.add("result")
-
-    setTimeout(() => {
-      footer.classList.remove("result")
-    }, 4000)
   }
 })
 
