@@ -82,7 +82,6 @@
     padding: 14px 16px;
     background-color: var(--bg-secondary);
     border: solid 1.5px var(--border-primary);
-    outline: 0;
 
     font: var(--title);
     color: var(--content-tertiary);
