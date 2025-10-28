@@ -82,11 +82,15 @@
     padding: 14px 16px;
     background-color: var(--bg-secondary);
     border: solid 1.5px var(--border-primary);
+    outline: 0;
 
     font: var(--title);
     color: var(--content-tertiary);
 
     cursor: text;
+    }
+    input:hover{
+    border: solid 2px var(--border-hover);
     }
 
     input:focus{
